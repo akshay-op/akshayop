@@ -112,10 +112,13 @@
 }
 
 .hello-text {
-  font-family: 'Courier New', monospace;
+  /* font-family: 'Courier New', monospace; */
+  font-family: "Borel", cursive;
   letter-spacing: -0.02em;
   line-height: 1;
   animation: glow 2s ease-in-out infinite alternate;
+  overflow:visible;
+  transform: translateY(10px);
 }
 
 @keyframes glow {

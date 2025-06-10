@@ -25,7 +25,16 @@ const AboutSection = () => {
         </p>
         
         <p>
-          I'm also a cofounder and community organizer at Confio, a tech community I 
+          I'm also a cofounder and community organizer at {" "}
+        <a 
+        href="https://www.linkedin.com/company/theconfio/" 
+        className="text-white hover:text-teal-400"
+        target="_blank"
+        rel="noopener noreferrer"
+         >
+         Confio
+      </a>, 
+        a tech community I 
           helped start to bring curious minds together. We host events, share cool ideas, and try 
           to make learning in tech feel a little less lonely.
         </p>

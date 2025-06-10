@@ -41,7 +41,8 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 flex">
+    // <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 flex">
+    <div className="min-h-screen flex items-center justify-center overflow-hidden bg-[linear-gradient(to_bottom,_#000000_0%,_#000000_80%,_#0a0a33_100%)]">
       {/* Left Sidebar */}
       <div className={`${activeSection ? 'w-full md:w-1/2 lg:w-2/5' : 'w-full'} p-8 md:p-12 flex flex-col transition-all duration-300`}>
         <div className="mb-8">
@@ -49,7 +50,7 @@ const Portfolio = () => {
           <div className="flex items-center gap-4 mb-4">
             <h1 className="text-white text-4xl md:text-5xl font-bold">AKSHAY OP</h1>
             <Avatar className="w-16 h-16">
-              <AvatarImage src="/lovable-uploads/2f00ec03-d8b4-4132-9f12-092e923613f9.png" alt="Akshay OP" />
+              <AvatarImage src="/lovable-uploads/profilepic.png" alt="Akshay OP" />
               <AvatarFallback className="bg-blue-500 text-white text-xl font-semibold">AO</AvatarFallback>
             </Avatar>
           </div>

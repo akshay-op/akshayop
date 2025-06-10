@@ -8,8 +8,7 @@ const ContactSection = () => {
       
       <div className="space-y-8">
         <p className="text-gray-300 leading-relaxed">
-          Let's connect! I'm always interested in discussing new opportunities, 
-          collaborations, or just having a chat about technology and innovation.
+          Feel free to reach out. whether it's about a new opportunity, a fun project, or even just to say hi or have someone to talk to!
         </p>
         
         <div className="space-y-6">
@@ -37,7 +36,7 @@ const ContactSection = () => {
             <Linkedin className="w-5 h-5 mr-4 text-blue-400" />
             <div>
               <p className="font-medium">LinkedIn</p>
-              <a href="#" className="text-blue-400 hover:text-blue-300">
+              <a href="https://www.linkedin.com/in/akshay-o-p/" className="text-blue-400 hover:text-blue-300" target="_blank" rel="noopener noreferrer">
                 akshay-o-p
               </a>
             </div>
@@ -47,20 +46,20 @@ const ContactSection = () => {
             <Github className="w-5 h-5 mr-4 text-blue-400" />
             <div>
               <p className="font-medium">GitHub</p>
-              <a href="#" className="text-blue-400 hover:text-blue-300">
+              <a href="https://github.com/akshay-op" className="text-blue-400 hover:text-blue-300" target="_blank" rel="noopener noreferrer">
                 akshay-op
               </a>
             </div>
           </div>
         </div>
         
-        <div className="mt-8 p-6 bg-gray-800/50 rounded-lg">
+        {/* <div className="mt-8 p-6 bg-gray-800/50 rounded-lg">
           <h3 className="text-lg font-semibold mb-4 text-blue-300">Let's Build Something Amazing</h3>
           <p className="text-gray-300 leading-relaxed">
             Whether you have a project in mind, want to discuss opportunities, 
             or just want to connect with a fellow tech enthusiast, I'd love to hear from you!
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
