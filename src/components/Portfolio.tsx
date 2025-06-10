@@ -9,7 +9,7 @@ import ResumeSection from './sections/ResumeSection';
 import ContactSection from './sections/ContactSection';
 
 const Portfolio = () => {
-  const [activeSection, setActiveSection] = useState('about');
+  const [activeSection, setActiveSection] = useState('');
 
   const navigationItems = [
     { id: 'about', label: 'About me' },
@@ -35,14 +35,14 @@ const Portfolio = () => {
       case 'contact':
         return <ContactSection />;
       default:
-        return <AboutSection />;
+        return null;
     }
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 flex">
       {/* Left Sidebar */}
-      <div className="w-full md:w-1/2 lg:w-2/5 p-8 md:p-12 flex flex-col">
+      <div className={`${activeSection ? 'w-full md:w-1/2 lg:w-2/5' : 'w-full'} p-8 md:p-12 flex flex-col transition-all duration-300`}>
         <div className="mb-8">
           <p className="text-gray-300 text-sm mb-2">I'm</p>
           <h1 className="text-white text-4xl md:text-5xl font-bold mb-4">AKSHAY OP</h1>
@@ -91,25 +91,29 @@ const Portfolio = () => {
         </nav>
       </div>
 
-      {/* Right Content Area */}
-      <div className="hidden md:block w-1/2 lg:w-3/5 border-l border-gray-700">
-        <div className="p-8 md:p-12 h-full overflow-y-auto">
-          {renderSection()}
+      {/* Right Content Area - Only show when a section is active */}
+      {activeSection && (
+        <div className="hidden md:block w-1/2 lg:w-3/5 border-l border-gray-700">
+          <div className="p-8 md:p-12 h-full overflow-y-auto">
+            {renderSection()}
+          </div>
         </div>
-      </div>
+      )}
 
-      {/* Mobile Content */}
-      <div className="md:hidden fixed inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 z-50 overflow-y-auto pt-20">
-        <button
-          onClick={() => setActiveSection('')}
-          className="absolute top-4 right-4 text-white text-2xl"
-        >
-          ×
-        </button>
-        <div className="p-8">
-          {renderSection()}
+      {/* Mobile Content - Only show when a section is active */}
+      {activeSection && (
+        <div className="md:hidden fixed inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 z-50 overflow-y-auto pt-20">
+          <button
+            onClick={() => setActiveSection('')}
+            className="absolute top-4 right-4 text-white text-2xl"
+          >
+            ×
+          </button>
+          <div className="p-8">
+            {renderSection()}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
