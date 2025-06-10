@@ -73,16 +73,16 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {/* Navigation */}
-        <nav className="space-y-2">
+        {/* Navigation - Horizontal Stack */}
+        <nav className="flex flex-wrap gap-4">
           {navigationItems.map((item) => (
             <button
               key={item.id}
               onClick={() => setActiveSection(item.id)}
-              className={`block text-left py-2 px-0 transition-colors duration-200 ${
+              className={`py-2 px-4 transition-colors duration-200 rounded-lg ${
                 activeSection === item.id
-                  ? 'text-blue-400 border-l-2 border-blue-400 pl-4'
-                  : 'text-gray-400 hover:text-blue-300 pl-4'
+                  ? 'text-blue-400 bg-blue-400/10'
+                  : 'text-gray-400 hover:text-blue-300 hover:bg-gray-800/50'
               }`}
             >
               {item.label}
@@ -91,9 +91,18 @@ const Portfolio = () => {
         </nav>
       </div>
 
+      {/* White Divider Line with gaps */}
+      {activeSection && (
+        <div className="hidden md:flex flex-col justify-center h-screen">
+          <div className="h-16"></div>
+          <div className="w-px bg-white flex-1"></div>
+          <div className="h-16"></div>
+        </div>
+      )}
+
       {/* Right Content Area - Only show when a section is active */}
       {activeSection && (
-        <div className="hidden md:block w-1/2 lg:w-3/5 border-l border-gray-700">
+        <div className="hidden md:block flex-1">
           <div className="p-8 md:p-12 h-full overflow-y-auto">
             {renderSection()}
           </div>
