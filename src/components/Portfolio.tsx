@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { Linkedin, Github, Mail, Phone } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from './ui/avatar';
 import AboutSection from './sections/AboutSection';
 import ProjectsSection from './sections/ProjectsSection';
 import ExperienceSection from './sections/ExperienceSection';
@@ -45,7 +46,13 @@ const Portfolio = () => {
       <div className={`${activeSection ? 'w-full md:w-1/2 lg:w-2/5' : 'w-full'} p-8 md:p-12 flex flex-col transition-all duration-300`}>
         <div className="mb-8">
           <p className="text-gray-300 text-sm mb-2">I'm</p>
-          <h1 className="text-white text-4xl md:text-5xl font-bold mb-4">AKSHAY OP</h1>
+          <div className="flex items-center gap-4 mb-4">
+            <h1 className="text-white text-4xl md:text-5xl font-bold">AKSHAY OP</h1>
+            <Avatar className="w-16 h-16">
+              <AvatarImage src="/lovable-uploads/2f00ec03-d8b4-4132-9f12-092e923613f9.png" alt="Akshay OP" />
+              <AvatarFallback className="bg-blue-500 text-white text-xl font-semibold">AO</AvatarFallback>
+            </Avatar>
+          </div>
           <p className="text-gray-300 text-lg mb-6">Data Scientist | AI-ML Engineer | Python Developer</p>
           <p className="text-gray-400 text-sm leading-relaxed mb-8">
             I think deeply, build intelligently, and write Python that reads like poetry.<br />
