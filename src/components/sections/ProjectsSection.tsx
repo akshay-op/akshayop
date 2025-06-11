@@ -68,7 +68,7 @@ const ProjectsSection = () => {
     {project.image && (
       <div className="w-full md:w-1/3 h-60 md:h-full">
         <img
-          src={project.image}
+          src={`${import.meta.env.BASE_URL}${project.image}`}
           alt={project.title}
           className="w-full h-full object-cover rounded-lg shadow-lg"
         />

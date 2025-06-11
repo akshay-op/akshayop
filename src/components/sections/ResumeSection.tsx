@@ -13,7 +13,7 @@ const ResumeSection = () => {
           <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
             onClick={() => {
             const link = document.createElement('a');
-            link.href = '/akshay_op_.pdf';
+            link.href = `${import.meta.env.BASE_URL}akshay_op_.pdf`;
             link.download = 'akshay_op.pdf';
             link.click();
           }}>

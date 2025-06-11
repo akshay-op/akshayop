@@ -75,7 +75,7 @@ const TechStackSection = () => {
                 >
                
                   {/* <span className="text-xl">{icon}</span> */}
-                  <img src={icon} alt={name} className="w-5 h-5" />
+                  <img src={`${import.meta.env.BASE_URL}${icon}`} alt={name} className="w-5 h-5" />
                   <span className="text-sm">{name}</span>
                 </span>
               ))}
