@@ -17,11 +17,7 @@ const ProjectsSection = () => {
       image: "/projects/behaviouranalysis.png",
       link : "https://github.com/akshay-op/browsing-behaviour-analysis"
     },
-    {
-      title: "Financial Risk Assessment Tool",
-      description: "Created a comprehensive risk assessment platform for financial institutions using advanced ML algorithms.",
-      tech: ["Python", "Scikit-learn", "Django", "Redis"]
-    }
+
   ];
 
   return (
