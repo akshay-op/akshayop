@@ -50,7 +50,7 @@ const Portfolio = () => {
           <div className="flex items-center gap-4 mb-4">
             <h1 className="text-white text-4xl md:text-5xl font-bold">AKSHAY OP</h1>
             <Avatar className="w-16 h-16">
-              <AvatarImage src="/profile/profilepic.png" alt="Akshay OP" />
+              <AvatarImage src={`${import.meta.env.BASE_URL}profile/profilepic.png`} alt="Akshay OP" />
               <AvatarFallback className="bg-blue-500 text-white text-xl font-semibold">AO</AvatarFallback>
             </Avatar>
           </div>
