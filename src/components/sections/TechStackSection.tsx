@@ -25,16 +25,17 @@ const TechStackSection = () => {
       { name: "Pandas", icon: "/icons/pandaslogo.svg" },
       { name: "NumPy", icon: "/icons/numpy.png" }
     ],
-    "Backend": [
-      { name: "Flask", icon: "/icons/flasklogo.svg" },
+    "API's": [
+      { name: "Flask", icon: "/icons/flaskfullicon.png" },
     ],
     "Database": [
       { name: "MongoDB", icon: "/icons/mongodblogo.png" },
       { name: "DynamoDB", icon: "/icons/dynamologo.png" },
       { name: "SQL", icon: "/icons/mysqllogo.png" },
     ],
-    "Cloud": [
+    "Cloud & Deployment": [
       { name: "AWS", icon: "/icons/awslogo.svg" },
+      { name: "Docker", icon: "/icons/dockerlogo.png" },
     ],
     "Version Control": [
       { name: "Git", icon: "/icons/githublogo.svg" },
