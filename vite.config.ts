@@ -7,6 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   // base: "/akshayop.github.io",
   base :"/akshayop/",
+  // base : "./",
   // server: {
   //   host: "::",
   //   port: 8080,
