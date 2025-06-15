@@ -11,15 +11,15 @@ const AboutSection = () => {
         
         <p>
           Throughout my career, I have worked on diverse projects across industries such 
-          as finance, climate, tech, smart building, and marketing. Each one taught me 
-          something new about working with complex data and solving real-world 
-          problems. My strength lies in using data to improve decision-making and make 
+          as finance, climate tech, smart building, and marketing. Each one taught me 
+          something new about working with complex data and solving real world 
+          problems. My strength lies in using data to improve decision making and make 
           things run more smoothly.
         </p>
         
         <p>
-          I've worked across the full stack — from training machine learning models and 
-          writing clean Python code to designing simple, user-friendly interfaces and 
+          I've worked across the full stack from training machine learning models and 
+          writing clean Python code to designing simple, user friendly interfaces and 
           shipping full products. I care just as much about how things work as how they 
           feel.
         </p>
